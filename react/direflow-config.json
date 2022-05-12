@@ -1,0 +1,8 @@
+{
+    "build": {
+      "componentPath": "direflow-component",
+      "filename": "customer-history.js",
+      "emitSourceMap": true,
+      "emitAll": true
+    }
+  }
