@@ -42,16 +42,16 @@ With **USERNAME** as parameter, getting customer history is done with:
 
 while writing an event into the history is done with 
 
-- POST https://SERVICE_HOME/history?username=USERNAME
+- POST https://SERVICE_HOME/history
  with body of the request:
 
 ```
 {
-  "username": value is string, USERNAME parameter,
+  "username": value is string, USERNAME parameter, mandatory
   "parent": value is string, empty one for parent events, and parent event id for children events,
   "level": value is number 1 for parent events, number 2 for children events
   "channel": value is string, "voice" or "digital"
-  "source" : value is string, a "Code" from Event Types table below
+  "source" : value is string, a "Code" from Event Types table below, mandatory
   "note": value is a string, description of the event 
   "link": value is empty string, reserved for future extensions
 }
