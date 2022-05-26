@@ -100,7 +100,7 @@ You can copy the code below into your desktop layout, into "area"->"panel"->"chi
           "attributes": { "slot": "panel", "class": "widget-pane" },
           "children": [            {
             "comp": "customer-history",
-            "script":"https://ciscoemearwxcccustomwidgents.s3.eu-central-1.amazonaws.com/customer-history/2.0/customer-history.js",
+            "script":"https://ciscoemearwxcccustomwidgents.s3.eu-central-1.amazonaws.com/customer-history/2.1/customer-history.js",
             "properties": {
               "isDarkMode": "$STORE.app.darkMode"
             }

@@ -13,7 +13,7 @@ interface IProps {
 
 const App: FC<IProps> = (props) => {
 
-  const componentVersion = "2.0";
+  const componentVersion = "2.1";
   const SERVICE_HOME = "check-readme-file";
 
   const [darkMode, setDarkMode] = useState(false);
@@ -39,13 +39,17 @@ const App: FC<IProps> = (props) => {
     let customerAni = ani;
     let mediaPrefix = "";
     if (ani.indexOf("@") === -1) {
-      mediaPrefix = "ani";
-      if (ani.charAt(0) === '+') {
-        customerAni = ani.substring(1);
+      if (ani.length >= 15) {
+        mediaPrefix = "psid";
+      } else {
+        mediaPrefix = "ani";
+        if (ani.charAt(0) === '+') {
+          customerAni = ani.substring(1);
+        }
       }
     } else {
       mediaPrefix = "email";
-    }
+    } 
     const url = `https://${SERVICE_HOME}/getuserdata?${mediaPrefix}=${customerAni}`;
     logger.debug(`URL for getCustomer: ${url}`);
     axios.get(url)
