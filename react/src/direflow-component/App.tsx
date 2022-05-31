@@ -13,11 +13,13 @@ interface IProps {
 
 const App: FC<IProps> = (props) => {
 
-  const componentVersion = "2.1";
+  const componentVersion = "2.2";
+  // You must set valid server UTL in the line below...
   const SERVICE_HOME = "check-readme-file";
 
   const [darkMode, setDarkMode] = useState(false);
   const [ani, setAni] = useState("");
+  // for development you may want to set your customeId...
   const [customerId, setCustomerId] = useState("");
   const [assignedContacts, setAssignedContacts] = useState(
     [] as {
@@ -184,7 +186,7 @@ const App: FC<IProps> = (props) => {
                                 <TimelineEvent
                                       key={event.id}  
                                       title={event.note}
-                                      collapsible={false}
+                                      collapsible={true}
                                       subtitle={eventTimestampToDateTime(event.timestamp)}
                                       iconStyle={{color: '#1C1C1C'}} 
                                       icon={<md-icon name={Channels[iconName].name} size="20" ></md-icon>}
