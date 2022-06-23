@@ -114,14 +114,22 @@ Best way to start would be to review documentation: https://developer.webex-cx.c
 
 1. The very first step would be to clone this repository: https://github.com/CiscoDevNet/webex-contact-center-widget-starter .
 
-2. Replace all files in started widget repository with those provided in this repository and rename the root directory to “rich-customer-history”.
+2. Rename the folder to something like "rich-customer-history-XYZ" or what ever you find good for you.
 
-3. Follow instructions from starter widget README file to build the component.
+3. Replace all files in starter widget repository react folder with those provided in THIS repository. The best would be to do it one file by one so that you don't loose any of the files or folders you got from original startes repository.
 
-4. Once build, the component should be deployed on public URL, and configured in desktop layout, per example above.
+4. In [Asp.tsx](./react/src/direflow-component/App.tsx) file, in line 16 change version number to "something else". 
+
+5. Change value "SERVICE_HOME" in line 18 of the same file to valid value see note above, withing **Backend Service** section.
+
+6. Run **yarn** command in the folder you renamed in step 2.
+
+7. Run **yarn** command in **/react** subfolder, and then in the same folder run **yarn build** command. This will generate **/build** folder under **/react**. Use the same "something else" value from step 5 to rename **/build** directory to. This is the folder you would be publishing in next step.
+
+8. Once built, the component should be deployed on public URL, [AWS](https://aws.amazon.com/getting-started/hands-on/host-static-website/), [Google Cloud](https://cloud.google.com/storage/docs/hosting-static-website), [Microsoft Azure](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website-host), [IBM Bluemix](https://www.ibm.com/cloud/blog/deploying-static-web-sites?mhsrc=ibmsearch_a&mhq=deploy%20static%20web%20page), [Heroku](https://gist.github.com/wh1tney/2ad13aa5fbdd83f6a489), [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-static-website-to-the-cloud-with-digitalocean-app-platform) or any other option of your choice...
 
 
 ## How To Report Errors and Propose Improvements
 
-Please contact Darko Zlatic (dzlatic@cisco.com).
+Please contact Darko Zlatic (dzlatic@cisco.com) & Carles Duz Palau (cpalau@cisco.com).
 
