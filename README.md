@@ -22,7 +22,7 @@ In current version, Rich Customer History support following Event Types.
 
 Before you deploy the actual widget, it is important to understand backend service and use it to establish event feeds in your environment. 
 
-### Backend Service
+### Backend Customer History Service
 
 This custom component was developed with very simple REST backend service, without any security features, but still relevant for showing the business value of high customization capabilities of WxCC Contact Center Agent Desktop.
 
@@ -128,6 +128,9 @@ Best way to start would be to review documentation: https://developer.webex-cx.c
 
 8. Once built, the component should be deployed on public URL, [AWS](https://aws.amazon.com/getting-started/hands-on/host-static-website/), [Google Cloud](https://cloud.google.com/storage/docs/hosting-static-website), [Microsoft Azure](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blob-static-website-host), [IBM Bluemix](https://www.ibm.com/cloud/blog/deploying-static-web-sites?mhsrc=ibmsearch_a&mhq=deploy%20static%20web%20page), [Heroku](https://gist.github.com/wh1tney/2ad13aa5fbdd83f6a489), [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-static-website-to-the-cloud-with-digitalocean-app-platform) or any other option of your choice...
 
+## Component Flow
+
+<img src="./README-resources/componentFlow.png" width="200"  />
 
 ## How To Report Errors and Propose Improvements
 
