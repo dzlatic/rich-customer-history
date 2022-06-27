@@ -130,7 +130,7 @@ Best way to start would be to review documentation: https://developer.webex-cx.c
 
 ## Component Flow
 
-<img src="./README-resources/WebComponentFlow.png" width="200"  />
+<img src="./README-resources/WebComponentFlow.png" width="950"  />
 
 ## How To Report Errors and Propose Improvements
 
